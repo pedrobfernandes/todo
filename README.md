@@ -10,7 +10,8 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Accessibility](#accessibility)
+- [Accessibility](#accessibility)
+  - [Tested With](#tested-with) 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -57,7 +58,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - TypeScript
 
-### Accessibility
+## Accessibility
 
 ### Tested with
 
