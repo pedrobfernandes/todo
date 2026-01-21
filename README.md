@@ -34,6 +34,15 @@ Users should be able to:
 
   ### Screenshot
 
+| Mobile Light | Mobile Dark |
+|-----------------------|--------------------------|
+| [![Screenshot Mobile Light](./screenshots/mobile-light.png)](./screenshots/mobile-light.png) | [![Screenshot Mobile Dark](./screenshots/mobile-dark.png)](./screenshots/mobile-dark.png) |
+
+| Desktop Light | Desktop Dark |
+|-----------------------|--------------------------|
+| [![Screenshot Desktop Light](./screenshots/desktop-light.png)](./screenshots/desktop-light.png) | [![Screenshot Desktop Dark](./screenshots/desktop-dark.png)](./screenshots/desktop-dark.png) |
+
+
   ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
