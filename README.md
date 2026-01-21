@@ -57,7 +57,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - TypeScript
 
-### ♿ Accessibility
+### Accessibility
 
 ### Tested with
 
