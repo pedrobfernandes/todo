@@ -13,7 +13,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Accessibility](#accessibility)
   - [Tested With](#tested-with) 
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -55,7 +54,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 - TypeScript
 
 ## Accessibility
@@ -70,5 +69,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@pedrobfernandes](https://www.frontendmentor.io/profile/pedrobfernandes)
+- Linkedin - [@pedrobfernandes](https://www.linkedin.com/in/pedrobfernandes)
