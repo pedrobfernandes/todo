@@ -10,9 +10,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Accessibility](#accessibility)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -58,6 +56,16 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - TypeScript
+
+## ♿ Accessibility
+
+### Tested with
+
+- Keyboard navigation
+- ORCA screen reader on Firefox (Linux)
+- WAVE
+- IBM Equal Access Accessibility Checker
+- Firefox Native Accessibilty Tool
 
 ## Author
 
