@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+
+/* josefin-sans-regular - latin */
+@font-face
+{
+  font-display: swap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/josefin-sans-v34-latin-regular.woff2') format('woff2');
+}
+
+/* josefin-sans-700 - latin */
+@font-face
+{
+  font-display: swap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/josefin-sans-v34-latin-700.woff2') format('woff2');
+}
+
+
+:root
+{
+    --theme-bg-image: url("/assets/images/bg-mobile-light.jpg");
+    
+    
+    /* Cores */
+    --c-active-state: #0C4AC4;
+    --c-checkmark-bg: linear-gradient(135deg, #57DDFF, #C058F3);
+    
+    --c-gray-50: #FAFAFA;
+    --c-purple-300: #CACDE8;
+    --c-gray-300: #D2D3DB;
+    --c-gray-600: #5A5B6A;
+
+    --c-navy-850: #484B6A;
+    --c-navy-950: #161722;
+    --c-navy-900: #25273C;
+    --c-purple-100: #E4E5F1;
+
+    
+    /* Mapeamento de cores  - ligth - padrão */
+    --c-h1: var(--c-navy-950);
+    --c-body-background: var(--c-gray-50);
+    --c-list-background: var(--c-gray-50);
+    --c-text-background: var(--c-navy-850);
+    --c-border: var(--c-gray-300);
+    --c-checkbox-hover-bg: #FFF;
+    --c-hover: var(--c-navy-950);
+    --shadow: 0 0 var(--space-sm) rgb(0, 0, 0, 0.1);
+    
+    
+    
+    
+    /* Font-sizes */
+    --fs-h1-small: calc(26 / 16 * 1rem);
+    --fs-h1-large: calc(40 / 16 * 1rem);
+    --fs-body-text: calc(18 / 16 * 1rem);
+    --fs-small-text: calc(16 / 16 * 1rem);
+    --fs-extra-small-text: calc(14 / 16 * 1rem);
+    
+    /* Espaçamentos */
+    --space-lg: calc(40 / 16 * 1rem);
+    --space-md: calc(20 / 16 * 1rem);
+    --space-sm: calc(10 / 16 * 1rem);
+    --space-xs: calc(5 / 16 * 1rem);
+    --space-xxs: calc(1 / 16 * 1rem);
+    
+    
+    --container-max-size: calc(550 / 16 * 1rem);
+    --image-desktop-height: calc(300 / 16 * 1rem);
+    --image-mobile-height: calc(200 / 16 * 1rem);
+}
+
+
+html[data-theme="dark"]
+{
+    --theme-bg-image: url("/assets/images/bg-mobile-dark.jpg");
+    
+    --c-h1: var(--c-gray-50);
+    --c-body-background: var(--c-navy-950);
+    --c-list-background: var(--c-navy-900);
+    --c-text-background: var(--c-purple-300);
+    --c-border: var(--c-gray-600);
+    --c-checkbox-hover-bg: var(--c-list-background);
+    --c-hover: var(--c-purple-100);
+    --c-active-state: #9EB4E1;;
+}
+
+
+@media (min-width: calc(1000 / 16 * 1rem))
+{
+    :root
+    {
+        --theme-bg-image: url("/assets/images/bg-desktop-light.jpg");
+    }
+    
+    html[data-theme="dark"]
+    {
+        --theme-bg-image: url("/assets/images/bg-desktop-dark.jpg");
+    }
+}
+
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul
+{
+    list-style: none;
+}
+
+
+input,
+button
+{
+    font: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+
+input,
+button,
+li
+{
+    color: var(--c-text-background);
+}
+
+
+input[type="checkbox"],
+button, label
+{
+    cursor: pointer;
+}
+
+
+button, input
+{
+    outline: none;
+}
+
+
+button:hover:not(.add-todo-button)
+{
+    outline: var(--space-xxs) solid var(--c-hover);
+}
+
+button:focus-visible:not(.add-todo-button)
+{
+    outline: var(--space-xs) solid var(--c-hover);
+}
+
+
+img
+{
+    max-inline-size: 100%;
+    display: block;
+}
+
+
+.visually-hidden
+{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+#root,
+html,
+body
+{
+    height: 100%;
+}
+
+
+html
+{
+    font-size: 100%;
+}
+
+
+body
+{
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: var(--fs-body-text);
+    color: var(--c-text-background);
+    position: relative;
+    width: 100%;
+    background-color: var(--c-body-background);
+}
+
+
+.bg-image
+{
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: var(--image-mobile-height);
+    
+    background-image: var(--theme-bg-image);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    
+    @media (min-width: calc(1000 / 16 * 1rem))
+    {
+        height: var(--image-desktop-height);
+    }
+}
+
+
+.app-wrapper
+{
+    width: min(var(--container-max-size), 90vw);
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+
+input[type="checkbox"]
+{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+input[type="checkbox"],
+.add-todo-button
+{
+    width: var(--space-md);
+    height: var(--space-md);
+    border-radius: 50%;
+    border: var(--space-xxs) solid var(--c-border);
+    background-clip: padding-box, border-box;
+}
+
+
+input[type="checkbox"]:hover,
+.add-todo-button:hover
+{
+    border: var(--space-xxs) solid transparent;
+    background: linear-gradient(var(--c-checkbox-hover-bg) 0 0) padding-box,
+        var(--c-checkmark-bg) border-box;
+}
+
+
+input[type="checkbox"]:focus-visible,
+.add-todo-button:focus-visible
+{
+    border: var(--space-xs) solid transparent;
+    background: linear-gradient(var(--c-checkbox-hover-bg) 0 0) padding-box,
+        var(--c-checkmark-bg) border-box;
+}
+
+
+input[type="checkbox"]:checked,
+.add-todo-button:active
+{
+    background: url('/assets/images/icon-check.svg'),
+        var(--c-checkmark-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}

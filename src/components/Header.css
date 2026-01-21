@@ -1,0 +1,35 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+    color: var(--c-h1);
+    position: relative;
+    inset-block-start: calc(48 / 16 * 1rem);
+    
+    
+    h1
+    {
+        letter-spacing: var(--space-sm);
+        text-transform: uppercase;
+        font-size: var(--fs-h1-small);
+    }
+    
+    
+    .theme-toggler svg
+    {
+        color: var(--c-h1);
+    }
+    
+    
+    @media (min-width: calc(1000 / 16 * 1rem))
+    {
+        inset-block-start: calc(73.6 / 16 * 1rem);
+        
+        
+        h1
+        {
+            font-size: var(--fs-h1-large);
+            letter-spacing: calc(var(--space-sm) + var(--space-xs));
+        }
+    }
+}

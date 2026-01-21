@@ -1,0 +1,38 @@
+.todo-list-form
+{
+    position: relative;
+    inset-block-start: calc(80 / 16 * 1rem);
+    background-color: var(--c-list-background);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    border-radius: var(--space-sm);
+    padding: calc(var(--space-sm) + calc(5 / 16 * 1rem));
+    
+    
+    &:focus-within
+    {
+        outline: calc(var(--space-xxs) * 2) solid var(--c-text-background);
+        outline-offset: var(--space-xxs);
+    }
+    
+    
+    input
+    {
+        order: 2;
+        outline: none;
+        flex: 1;
+    }
+    
+    
+    .add-todo-button
+    {
+        order: 1;
+    }
+    
+    
+    @media (min-width: calc(1000 / 16 * 1rem))
+    {
+        inset-block-start: calc(130 / 16 * 1rem);
+    }
+}

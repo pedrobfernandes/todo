@@ -1,0 +1,49 @@
+.todo-list
+{
+    border-top-left-radius: var(--space-sm);
+    border-top-right-radius: var(--space-sm);
+    background-color: var(--c-list-background);
+    
+    position: relative;
+    inset-block-start: calc(96.4 / 16 * 1rem);
+    
+    box-shadow: var(--shadow);
+
+    
+    li
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc(var(--space-sm) + calc(5 / 16 * 1rem));
+        border-block-end: 0.1rem solid var(--c-border);
+        
+        
+        .todo-list-input-group
+        {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            
+            
+            .completed
+            { 
+                text-decoration: line-through;
+                text-decoration-color: var(--c-text-background);
+            }
+        }
+        
+        
+        .delete-todo-button
+        {
+            width: calc(var(--space-sm) + calc(5 / 16 * 1rem));
+            height: calc(var(--space-sm) + calc(5 / 16 * 1rem));
+        }
+    }
+    
+    
+    @media (min-width: calc(1000 / 16 * 1rem))
+    {
+        inset-block-start: calc(155 / 16 * 1rem);
+    }
+}

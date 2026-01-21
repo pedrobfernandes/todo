@@ -1,0 +1,101 @@
+.todo-footer
+{
+    position: relative;
+    inset-block-start: calc(96.3 / 16 * 1rem);
+    background-color: var(--c-list-background);
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+    .todo-footer-main,
+    .todo-footer-filters ul
+    {
+        padding: calc(var(--space-sm) + calc(5 / 16 * 1rem));
+    }
+    
+    
+    .todo-footer-main
+    {
+        display: flex;
+        justify-content: space-between;
+        border-bottom-left-radius: var(--space-xs);
+        border-bottom-right-radius: var(--space-xs);
+        box-shadow: var(--shadow);
+        
+        
+        span, button
+        {
+            font-size: var(--fs-extra-small-text);
+        }
+    }
+    
+    
+    button:hover
+    {
+        color: var(--c-hover);
+    }
+    
+    
+    .todo-footer-filters
+    {
+
+        background-color: var(--c-body-background);
+    }
+    
+    
+    .todo-footer-filters ul
+    {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-sm);
+        margin-block: var(--space-md);
+        background-color: var(--c-list-background);
+        border-radius: var(--space-xs);
+        font-weight: 700;
+        box-shadow: var(--shadow);
+        
+        
+        .active
+        {
+            color: var(--c-active-state);
+        }
+    }
+    
+    .warning-duplicate
+    {
+        text-align: center;
+        margin-block: 1rem;
+    }
+    
+    
+    @media (min-width: calc(500 / 16 * 1rem))
+    {
+        .todo-footer-main button
+        {
+            position: relative;
+        }
+        
+        
+        .todo-footer-main span
+        {
+            position: relative;
+        }
+        
+        
+        .todo-footer-filters ul
+        {
+            position: relative;
+            margin-block: 0;
+            border-radius: unset;
+            box-shadow: none;
+            inset-block-start: calc(-44.8 / 16 * 1rem);
+            background-color: unset;
+        }
+    }
+    
+    
+    @media (min-width: calc(1000 / 16 * 1rem))
+    {
+        inset-block-start: calc(155 / 16 * 1rem);
+    }
+}
