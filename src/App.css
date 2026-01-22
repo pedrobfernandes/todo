@@ -127,6 +127,7 @@ button
     font: inherit;
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 
@@ -144,11 +145,6 @@ button, label
     cursor: pointer;
 }
 
-
-button, input
-{
-    outline: none;
-}
 
 
 button:hover:not(.add-todo-button)

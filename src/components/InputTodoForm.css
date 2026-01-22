@@ -22,11 +22,15 @@
         order: 2;
         outline: none;
         flex: 1;
+/*
+        padding-inline-start: var(--space-xs);
+*/
     }
     
     
     .add-todo-button
     {
+        margin-inline-end: calc(-5 / 16 * 1rem);
         order: 1;
     }
     
