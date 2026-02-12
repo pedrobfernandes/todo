@@ -165,6 +165,13 @@ img
 }
 
 
+h1, h2, h3,
+p, label,
+span
+{
+    text-wrap: balance;
+}
+
 .visually-hidden
 {
     position: absolute;
