@@ -7,7 +7,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Accessibility](#accessibility)
@@ -40,11 +39,6 @@ Users should be able to:
 |-----------------------|--------------------------|
 | [![Screenshot Desktop Light](./screenshots/desktop-light.png)](./screenshots/desktop-light.png) | [![Screenshot Desktop Dark](./screenshots/desktop-dark.png)](./screenshots/desktop-dark.png) |
 
-
-  ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [awsome-todo-app](https://awsome-todo-app.netlify.app)
 
 ## My process
 
