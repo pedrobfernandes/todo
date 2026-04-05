@@ -1,67 +1,77 @@
-# Frontend Mentor - Todo app solution
+# Todo List
 
-This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+Todo application built with React and TypeScript, featuring task management, theme switching and accessible interactions.
 
-## Table of contents
+🔗 **Live Demo:** https://weather-now-app123.netlify.app
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Accessibility](#accessibility)
-  - [Tested With](#tested-with) 
-- [Author](#author)
+---
 
-## Overview
+## 🚀 Key Features
 
-### The challenge
+* Add, complete and delete tasks
+* Filter tasks (all / active / completed)
+* Clear completed tasks
+* Light/Dark theme toggle
+* System theme detection via `prefers-color-scheme`
+* Persistent state using localStorage
 
-Users should be able to:
+---
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+## 🛠️ Tech Stack
 
-  ### Screenshot
+* React
+* TypeScript
+* CSS (Flexbox)
+* LocalStorage API
 
-| Mobile Light | Mobile Dark |
+---
+
+## ♿ Accessibility
+
+Accessibility was implemented with focus on real user interaction.
+
+### ✔️ Implemented
+
+* Full keyboard navigation
+* Focus management
+* ARIA for dynamic updates
+* Accessible state announcements (aria-live)
+
+### 🧪 Tested with
+
+* Orca screen reader (Firefox on Linux)
+* WAVE
+* IBM Equal Access
+* Firefox Accessibility Tools
+
+---
+
+## 🎨 UI / UX Notes
+
+* Theme toggle with persistence (localStorage)
+* Initial theme based on user's system preference
+* Clear visual states for active filters and tasks
+
+---
+
+## 📸 Preview
+
+| Mobile Light | Desktop Dark |
 |-----------------------|--------------------------|
-| [![Screenshot Mobile Light](./screenshots/mobile-light.png)](./screenshots/mobile-light.png) | [![Screenshot Mobile Dark](./screenshots/mobile-dark.png)](./screenshots/mobile-dark.png) |
+| [![Screenshot Mobile Light](./screenshots/mobile-light.png)](./screenshots/mobile-light.png) | [![Screenshot Desktop Dark](./screenshots/desktop-dark.png)](./screenshots/desktop-dark.png) |
 
-| Desktop Light | Desktop Dark |
-|-----------------------|--------------------------|
-| [![Screenshot Desktop Light](./screenshots/desktop-light.png)](./screenshots/desktop-light.png) | [![Screenshot Desktop Dark](./screenshots/desktop-dark.png)](./screenshots/desktop-dark.png) |
+---
 
+## 🧠 Notes
 
-## My process
+This project was built as part of a Frontend Mentor challenge, with additional focus on:
 
-### Built with
+* Practicing TypeScript in interactive UI scenarios
+* Implementing accessible state changes in dynamic lists
+* Managing UI state and persistence
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/)
-- TypeScript
+---
 
-## Accessibility
+## 📫 Contact
 
-### Tested with
-
-- Keyboard navigation
-- ORCA screen reader on Firefox (Linux)
-- WAVE
-- IBM Equal Access Accessibility Checker
-- Firefox Native Accessibilty Tool
-
-## Author
-
-- Frontend Mentor - [@pedrobfernandes](https://www.frontendmentor.io/profile/pedrobfernandes)
-- Linkedin - [@pedrobfernandes](https://www.linkedin.com/in/pedrobfernandes)
+* LinkedIn: https://www.linkedin.com/in/pedrobfernandes
