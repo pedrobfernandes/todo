@@ -2,7 +2,7 @@
 
 Todo application built with React and TypeScript, featuring task management, theme switching and accessible interactions.
 
-🔗 **Live Demo:** https://weather-now-app123.netlify.app
+🔗 **Live Demo:** https://awsome-todo-app.netlify.app
 
 ---
 
