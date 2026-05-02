@@ -71,16 +71,6 @@ Accessibility was implemented with focus on real user interaction.
 
 ---
 
-## 🧠 Notes
-
-This project was built as part of a Frontend Mentor challenge, with additional focus on:
-
-* Practicing TypeScript in interactive UI scenarios
-* Implementing accessible state changes in dynamic lists
-* Managing UI state and persistence
-
----
-
 ## 📫 Contact
 
 * LinkedIn: https://www.linkedin.com/in/pedrobfernandes
