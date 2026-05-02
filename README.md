@@ -1,6 +1,6 @@
 # Todo List
 
-Todo application built with React and TypeScript, featuring task management, theme switching and accessible interactions.
+Todo application built with React and TypeScript, featuring task management, state persistence, theme switching and accessible interactions.
 
 🔗 **Live Demo:** https://awsome-todo-app.netlify.app
 
@@ -26,6 +26,16 @@ Todo application built with React and TypeScript, featuring task management, the
 
 ---
 
+## 🧠 Learnings
+
+During this project, I focused on:
+
+* Applying TypeScript in interactive UI scenarios
+* Managing UI state and persistence with localStorage
+* Implementing accessible state changes in dynamic lists
+
+---
+
 ## ♿ Accessibility
 
 Accessibility was implemented with focus on real user interaction.
@@ -34,8 +44,7 @@ Accessibility was implemented with focus on real user interaction.
 
 * Full keyboard navigation
 * Focus management
-* ARIA for dynamic updates
-* Accessible state announcements (aria-live)
+* WAI-ARIA for dynamic updates (aria-live announcements)
 
 ### 🧪 Tested with
 
