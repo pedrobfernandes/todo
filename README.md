@@ -28,7 +28,7 @@ Todo application built with React and TypeScript, featuring task management, sta
 
 ## 🧠 Learnings
 
-During this project, I focused on:
+This project was based on a Frontend Mentor challenge, with additional focus on:
 
 * Applying TypeScript in interactive UI scenarios
 * Managing UI state and persistence with localStorage
